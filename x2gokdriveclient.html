@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/x2gostyle.css">
+</head>
+
+<body>
+
+<div id="status" style="display:inline;min-width:100vw;float:left">
+ <span id="status_cap" style="display:inline-block; margin-top:10px;">Session status</span>
+
+ <div id="session_control" style="display:inline;float:right;margin-right:40px;">
+
+ <div id="x2goclip" class="x2goclip" style="display:inline-block;">
+ <div id="x2goclip_text" contentEditable="true" class= "x2gocliptext"> Paste text or image here
+ </div>
+ <button id="close_clip" class="x2goimgbut x2goclipbut" ><img id="x2goclip_close_img" src="/assets/x2go-plugin/IMG/clip_copy_close.png"></button>
+ </div>
+
+
+ <div class="x2gotip" style="display:inline-block;">
+ <span class="x2gotiptext" id="serverclipnotify">New Image in Clipboard</span>
+ </div>
+
+ <div class="x2gotooltip">
+ <span class="x2gotooltiptext">X2Go to Clipboard</span>
+ <button id="copy_from" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;"><img src="/assets/x2go-plugin/IMG/clip_from.png"></button>
+ </div>
+
+ <div class="x2gotip" style="display:inline-block;">
+ <span class="x2gotiptext" id="systemclipnotify">New Image in Clipboard</span>
+ </div>
+
+
+
+ <div class="x2gotooltip">
+ <span class="x2gotooltiptext">Clipboard to X2Go</span>
+ <button id="copy_to" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;" ><img src="/assets/x2go-plugin/IMG/clip_to.png"></button>
+ </div>
+
+ <div class="x2gotooltip">
+ <span class="x2gotooltiptext">Suspend session</span>
+ <button id="suspend" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;" ><img src="/assets/x2go-plugin/IMG/suspend.png"></button>
+ </div>
+
+ <div class="x2gotooltip">
+ <span class="x2gotooltiptext">Terminate session</span>
+ <button id="terminate" class="x2goimgbut" style="vertical-align:middle;margin-bottom:5px;" ><img src="/assets/x2go-plugin/IMG/stop.png"></button>
+ </div>
+
+ <div class="x2gotooltip">
+ <span class="x2gotooltiptext">Back to Morpheus</span>
+ <button id="attach" class="x2goimgbut" style="vertical-align:middle;margin-bottom:5px;"  ><img src="/assets/x2go-plugin/IMG/attach.png"></button>
+ </div>
+ </div>
+
+</div>
+
+
+<canvas id="canvas" width="800px" height="800px" style="display:block;border:1px solid lightgrey;" tabindex='1' ></canvas>
+</body>
