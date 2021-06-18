@@ -1,0 +1,64 @@
+Source: x2gohtmlclient
+Section: x11
+Priority: optional
+Maintainer: X2Go Developers <x2go-dev@lists.x2go.org>
+Uploaders:
+ Oleksandr Shneyder <o.schneydr@phoca-gmbh.de>,
+ Mike Gabriel <mike.gabriel@das-netzwerkteam.de>,
+ Mihai Moldovan <ionic@ionic.de>,
+Build-Depends:
+ debhelper (>= 9),
+ quilt,
+Standards-Version: 4.5.1
+Homepage: https://code.x2go.org/releases/source/x2gohtmlclient
+Vcs-Git: git://code.x2go.org/x2gohtmlclient.git
+Vcs-Browser: https://code.x2go.org/gitweb?p=x2gohtmlclient.git;a=summary
+
+Package: x2gohtmlclient
+Architecture: any
+Depends:
+ libjs-x2goclient,
+ ${misc:Depends},
+Recomends:
+ nginx,
+ x2gowebrpc,
+ x2gowswrapper,
+Suggests:
+ x2goserver,
+ x2goserver-x2gokdrive,
+Description: X2Go HTML5 Client (example html page)
+ X2Go is a server based computing environment with
+    - session resuming
+    - low bandwidth support
+    - session brokerage support
+    - client-side mass storage mounting support
+    - client-side printing support
+    - audio support
+    - authentication by smartcard and USB stick
+ .
+ The X2Go HTML5 Client provides X2Go session access via webbrowser
+ technology (supported by X2Go KDrive Xserver backend only).
+ .
+ This package contains a demo HTML site utilizing X2Go HTML5 Javascript
+ Client.
+
+Package: libjs-x2goclient
+Architecture: any
+Depends:
+ ${misc:Depends},
+Suggests:
+ x2gohtmlclient,
+Description: X2Go HTML5 Client (JS library)
+ X2Go is a server based computing environment with
+    - session resuming
+    - low bandwidth support
+    - session brokerage support
+    - client-side mass storage mounting support
+    - client-side printing support
+    - audio support
+    - authentication by smartcard and USB stick
+ .
+ The X2Go HTML5 Client provides X2Go session access via webbrowser
+ technology (supported by X2Go KDrive Xserver backend only).
+ .
+ This package contains the Javascript code of X2Go HTML Client.

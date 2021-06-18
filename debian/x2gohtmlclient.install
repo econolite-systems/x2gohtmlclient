@@ -1,0 +1,8 @@
+css/ usr/share/x2gohtmlclient/
+index.html usr/share/x2gohtmlclient/demo/
+conf/nginx/sites-available/x2gohtmlclient-demo.conf etc/nginx/sites-available/
+conf/nginx/snippets/x2gohtmlclient-*.conf etc/nginx/snippets/
+img/buttons/png/clip_from.png usr/share/x2gohtmlclient/img/
+img/buttons/png/clip_to.png usr/share/x2gohtmlclient/img/
+img/buttons/png/stop.png usr/share/x2gohtmlclient/img/
+img/buttons/png/suspend.png usr/share/x2gohtmlclient/img/
