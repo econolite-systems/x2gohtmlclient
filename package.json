@@ -1,0 +1,25 @@
+{
+  "name": "x2gohtmlclient",
+  "version": "1.0.0",
+  "description": "X2Go HTML Client for X2GoKDrive",
+  "main": "dist/x2goclient.js",
+  "scripts": {
+    "build": "./minifyjs.sh"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://code.x2go.org/x2gohtmlclient.git"
+  },
+  "keywords": [
+    "X2Go",
+    "HTML",
+    "Client",
+    "KDrive",
+    "remote",
+    "session",
+    "desktop"
+  ],
+  "author": "Oleksandr Shneyder",
+  "license": "AGPL-3.0-or-later"
+}
