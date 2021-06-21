@@ -57,7 +57,8 @@ X2GoHTMLClient
                 console.log(this);
                 console.log(this.response);
 
-                let resp = JSON.parse(this.response.substr(this.response.indexOf('{')));
+                let jsonSep='__STARTJSON__{';
+                let resp = JSON.parse(this.response.substr(this.response.indexOf(jsonSep)+jsonSep.length-1));
                 console.log(resp);
                 if (resp.status != 0)
                 {
