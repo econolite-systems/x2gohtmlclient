@@ -497,8 +497,8 @@ X2GoKDriveHTMLClient
 
     sendCookie()
     {
-        //this creates "views" on buffer offset 0, length 5 elements
-        this.__websocket.send(this.__cookie);
+        let encoder = new TextEncoder();
+        this.__websocket.send(encoder.encode(this.__cookie).buffer);
     }
 
 
