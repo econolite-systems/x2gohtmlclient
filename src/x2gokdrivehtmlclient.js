@@ -508,7 +508,7 @@ X2GoKDriveHTMLClient
         {
             //1st row
             case 192:
-                return 49; //`
+                return 49; //` (putting a second accent grave here, so that MCEdit does not get confused with syntax highlighting) `
             case   49:
                 return 10; //1
             case 50:
@@ -590,7 +590,7 @@ X2GoKDriveHTMLClient
             case 186 :
                 return  47; //;
             case 222 :
-                return  48; //'
+                return  48; //' (putting a second apostrophe here, so that MCEdit does not get confused with syntax highlighting) '
             case 220 :
                 return  51; //\
 
