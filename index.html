@@ -22,7 +22,7 @@
 <html>
 <head>
 <h1>X2Go HTML Client</h1>
-<link rel="stylesheet" href="CSS/x2gostyle.css">
+<link rel="stylesheet" href="/assets/css/x2gostyle.css">
 </head>
 <body>
 
@@ -148,7 +148,7 @@ Don't have it yet? <a href="http://www.x2go.org">Check installation instructions
  <div id="x2goclip" class="x2goclip" style="display:inline-block;">
  <div id="x2goclip_text" contentEditable="true" class= "x2gocliptext"> Paste text or image here
  </div>
- <button id="close_clip" class="x2goimgbut x2goclipbut" ><img id="x2goclip_close_img" src="/assets/x2go-plugin/IMG/clip_copy_close.png"></button>
+ <button id="close_clip" class="x2goimgbut x2goclipbut" ><img id="x2goclip_close_img" src="/assets/img/clip_copy_close.png"></button>
  </div>
 
 
@@ -159,7 +159,7 @@ Don't have it yet? <a href="http://www.x2go.org">Check installation instructions
 
  <div class="x2gotooltip">
  <span class="x2gotooltiptext">X2Go to Clipboard</span>
- <button id="copy_from" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;"><img src="/assets/x2go-plugin/IMG/clip_from.png"></button>
+ <button id="copy_from" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;"><img src="/assets/img/clip_from.png"></button>
  </div>
 
 
@@ -171,22 +171,22 @@ Don't have it yet? <a href="http://www.x2go.org">Check installation instructions
 
  <div class="x2gotooltip">
  <span class="x2gotooltiptext">Clipboard to X2Go</span>
- <button id="copy_to" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;" ><img src="/assets/x2go-plugin/IMG/clip_to.png"></button>
+ <button id="copy_to" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;" ><img src="/assets/img/clip_to.png"></button>
  </div>
 
  <div class="x2gotooltip">
  <span class="x2gotooltiptext">Suspend session</span>
- <button id="suspend" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;" ><img src="/assets/x2go-plugin/IMG/suspend.png"></button>
+ <button id="suspend" class="x2goimgbut" style="vertical-align:middle;margin-left:10px;margin-bottom:5px;" ><img src="/assets/img/suspend.png"></button>
  </div>
 
  <div class="x2gotooltip">
  <span class="x2gotooltiptext">Terminate session</span>
- <button id="terminate" class="x2goimgbut" style="vertical-align:middle;margin-bottom:5px;" ><img src="/assets/x2go-plugin/IMG/stop.png"></button>
+ <button id="terminate" class="x2goimgbut" style="vertical-align:middle;margin-bottom:5px;" ><img src="/assets/img/stop.png"></button>
  </div>
 
  <div class="x2gotooltip">
  <span id="detach_span" class="x2gotooltiptext">New window</span>
- <button id="detach" class="x2goimgbut" style="vertical-align:middle;margin-bottom:5px;" ><img id="detach_img" src="/assets/x2go-plugin/IMG/detach.png"></button>
+ <button id="detach" class="x2goimgbut" style="vertical-align:middle;margin-bottom:5px;" ><img id="detach_img" src="/assets/img/detach.png"></button>
  </div>
  </div>
 
@@ -197,8 +197,8 @@ Don't have it yet? <a href="http://www.x2go.org">Check installation instructions
 
 
 
-var RPC_path="/assets/x2go-plugin/RPC/x2gorpc.cgi";
-var asset_path="/assets/x2go-plugin/IMG/";
+var RPC_path="/assets/rpc/x2gorpc.cgi";
+var asset_path="/assets/img/";
 
 var name="X2Go Server";
 
@@ -496,4 +496,4 @@ function  getProxyPass()
 </script>
 
 <canvas id="canvas" width="1280" height="920" style="display:none;border:1px solid lightgrey;" tabindex='1' ></canvas>
-<script type="text/javascript" src="/assets/x2go-plugin/JS/x2goclient.js"></script>
+<script type="text/javascript" src="/assets/js/x2goclient.min.js"></script>
