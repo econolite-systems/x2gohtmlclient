@@ -1,0 +1,8 @@
+dist/x2gokdriveclient.js     usr/share/javascript/x2gokdriveclient/
+dist/x2gokdriveclient.min.js usr/share/javascript/x2gokdriveclient/
+img/buttons/png/clip_*_close.png usr/share/x2gohtmlclient/img/
+img/buttons/png/attach.png usr/share/x2gohtmlclient/img/
+img/buttons/png/detach.png usr/share/x2gohtmlclient/img/
+img/backgrounds/svg/x2gobg.svg usr/share/x2gohtmlclient/img/
+conf/nginx/snippets/libjs-x2gokdriveclient.conf etc/nginx/snippets/
+x2gokdriveclient.html usr/share/x2gohtmlclient/

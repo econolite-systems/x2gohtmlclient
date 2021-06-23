@@ -2,7 +2,7 @@
   "name": "x2gohtmlclient",
   "version": "1.0.0",
   "description": "X2Go HTML Client for X2GoKDrive",
-  "main": "dist/x2goclient.js",
+  "main": "dist/x2gokdirveclient.js",
   "scripts": {
     "build": "./minifyjs.sh"
     "test": "echo \"Error: no test specified\" && exit 1"
