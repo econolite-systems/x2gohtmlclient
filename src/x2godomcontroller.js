@@ -390,7 +390,7 @@ X2GoDOMController
         {
             this.__inputClip=true;
             this.__clipFocused=false;
-            this.__clipElementCloseImg.src="/assets/x2go-plugin/IMG/clip_copy_close.png"
+            this.__clipElementCloseImg.src=asset_path + "clip_copy_close.png"
             this.__clipElementText.style.color="grey";
             this.__clipElementText.innerText= "Paste text or image here";
             this.__clipElementText.contentEditable=true;
@@ -399,7 +399,7 @@ X2GoDOMController
         {
 //            console.log(data);
             this.__inputClip=false;
-            this.__clipElementCloseImg.src="/assets/x2go-plugin/IMG/clip_close.png"
+            this.__clipElementCloseImg.src=asset_path + "clip_close.png"
             this.__clipFocused=true;
             this.__clipElementText.style.color="black";
             if(data.type && data.type=="image/png")
@@ -490,7 +490,7 @@ X2GoDOMController
 
     getBackground()
     {
-        return "/assets/x2go-plugin/IMG/x2gobg.svg";
+        return asset_path + "x2gobg.svg";
     }
 
 
