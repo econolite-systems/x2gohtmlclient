@@ -289,31 +289,31 @@ sshproxytype=SSH\n\
 width=1024\n\
 height=768\n\
 user="+getUname()+"\n";
-	if(getProxy())
-	{
-		text+="usesshproxy=true\n";
-	}
-	else
-	{
-		text+="usesshproxy=false\n";
-	}
-	if(document.getElementById("pr_same_pass").checked)
-	{
-		text+="sshproxysamepass=true\n";
-	}
-	else
-	{
-		text+="sshproxysamepass=false\n";
-	}
-	if(document.getElementById("pr_same_user").checked)
-	{
-		text+="sshproxysameuser=true\n";
-	}
-	else
-	{
-		text+="sshproxysameuser=false\n";
-		text+="sshproxyuser="+getProxyUser()+"\n";
-	}
+    if(getProxy())
+    {
+        text+="usesshproxy=true\n";
+    }
+    else
+    {
+        text+="usesshproxy=false\n";
+    }
+    if(document.getElementById("pr_same_pass").checked)
+    {
+        text+="sshproxysamepass=true\n";
+    }
+    else
+    {
+        text+="sshproxysamepass=false\n";
+    }
+    if(document.getElementById("pr_same_user").checked)
+    {
+        text+="sshproxysameuser=true\n";
+    }
+    else
+    {
+        text+="sshproxysameuser=false\n";
+        text+="sshproxyuser="+getProxyUser()+"\n";
+    }
     let filename = name+".x2go";
     download(filename, text);
 
@@ -369,29 +369,29 @@ function validateForm()
         {
             if(!proxyUser)
             {
-				alert("Please enter Proxy Username");
-				return false;
+                alert("Please enter Proxy Username");
+                return false;
             }
-			if (document.getElementById("embed").className.indexOf("active") !=-1 && !proxyPass)
-			{
-				alert("Please enter Proxy Password");
-				return false;
-			}
+            if (document.getElementById("embed").className.indexOf("active") !=-1 && !proxyPass)
+            {
+                alert("Please enter Proxy Password");
+                return false;
+            }
         }
         return true;
 }
 
 function download(filename, text) {
-	let element = document.createElement('a');
-	element.setAttribute('href', 'data:application/x-x2go;charset=utf-8,' + encodeURIComponent(text));
-	element.setAttribute('download', filename);
+    let element = document.createElement('a');
+    element.setAttribute('href', 'data:application/x-x2go;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
 
-	element.style.display = 'none';
-	document.body.appendChild(element);
+    element.style.display = 'none';
+    document.body.appendChild(element);
 
-	element.click();
+    element.click();
 
-	document.body.removeChild(element);
+    document.body.removeChild(element);
 }
 
 
@@ -411,29 +411,29 @@ function client_choice(e)
 {
     if(e.target.dataset.type=="embed")
     {
-       document.getElementById("pass-input").style.display="table-row";
-       document.getElementById("proxy-pass-input").style.display="table-row";
-       document.getElementById("nx-radio").style.display="none";
-       document.getElementById("kdr-radio").style.display="none";
-       document.getElementById("con-btn").style.display="block";
-       document.getElementById("con-btn_t").style.display="none";
-       document.getElementById("client_installer").style.display="none";
+        document.getElementById("pass-input").style.display="table-row";
+        document.getElementById("proxy-pass-input").style.display="table-row";
+        document.getElementById("nx-radio").style.display="none";
+        document.getElementById("kdr-radio").style.display="none";
+        document.getElementById("con-btn").style.display="block";
+        document.getElementById("con-btn_t").style.display="none";
+        document.getElementById("client_installer").style.display="none";
 
-       document.getElementById("embed").className="chart-type active";
-       document.getElementById("native").className="chart-type";
+        document.getElementById("embed").className="chart-type active";
+        document.getElementById("native").className="chart-type";
     }
     else
     {
-       document.getElementById("pass-input").style.display="none";
-       document.getElementById("proxy-pass-input").style.display="none";
-       document.getElementById("nx-radio").style.display="inline";
-       document.getElementById("kdr-radio").style.display="inline";
-       document.getElementById("con-btn").style.display="none";
-       document.getElementById("con-btn_t").style.display="block";
-       document.getElementById("client_installer").style.display="table-row";
+        document.getElementById("pass-input").style.display="none";
+        document.getElementById("proxy-pass-input").style.display="none";
+        document.getElementById("nx-radio").style.display="inline";
+        document.getElementById("kdr-radio").style.display="inline";
+        document.getElementById("con-btn").style.display="none";
+        document.getElementById("con-btn_t").style.display="block";
+        document.getElementById("client_installer").style.display="table-row";
 
-       document.getElementById("embed").className="chart-type";
-       document.getElementById("native").className="chart-type active";
+        document.getElementById("embed").className="chart-type";
+        document.getElementById("native").className="chart-type active";
     }
 }
 
@@ -445,52 +445,52 @@ document.getElementById("server").focus();
 
 function getServer()
 {
-        return document.getElementById("server").value;
+    return document.getElementById("server").value;
 }
 
 function getUname()
 {
-        return document.getElementById("uname").value;
+    return document.getElementById("uname").value;
 }
 
 function  getPass()
 {
-        return document.getElementById("pass").value;
+    return document.getElementById("pass").value;
 }
 
 function  getCommand()
 {
-       return document.getElementById("cmd").value;
+    return document.getElementById("cmd").value;
 }
 
 function getName()
 {
-       return name;
+    return name;
 }
 
 function  getProxy()
 {
-        let proxy=document.getElementById("proxy").value;
-        return proxy;
+    let proxy=document.getElementById("proxy").value;
+    return proxy;
 }
 
 function  getProxyUser()
 {
-   	    if(document.getElementById("pr_same_user").checked)
-   	    {
-   	        return getUname();
-		}
+    if(document.getElementById("pr_same_user").checked)
+    {
+        return getUname();
+    }
 
-        return document.getElementById("pr_uname").value;
+    return document.getElementById("pr_uname").value;
 }
 
 function  getProxyPass()
 {
-   	    if(document.getElementById("pr_same_pass").checked)
-   	    {
-   	        return getPass();
-		}
-        return document.getElementById("pr_pass").value;
+    if(document.getElementById("pr_same_pass").checked)
+    {
+        return getPass();
+    }
+    return document.getElementById("pr_pass").value;
 }
 
 </script>
