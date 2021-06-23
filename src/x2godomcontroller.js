@@ -249,7 +249,7 @@ X2GoDOMController
         }
         let cl = app.__x2goclient;
         app.updateStatus("X2Go session with ID <b>" + cl.__sessionID + "</b> displayed in other window");
-        let wnd = window.open("/assets/x2go-plugin/x2gokdriveclient.html", "X2Go Client", "toolbar=no,resizable=yes,location=no,menubar=no,status=no,titlebar=no");
+        let wnd = window.open("/x2go/x2gokdriveclient.html", "X2Go Client", "toolbar=no,resizable=yes,location=no,menubar=no,status=no,titlebar=no");
         app.__sepWnd = wnd;
         console.log("deatch session to", wnd);
         setTimeout(function ()
