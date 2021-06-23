@@ -17,4 +17,5 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-minify src/x2godomcontroller.js src/x2gokdrivehtmlclient.js src/x2gohtmlclient.js  > dist/x2goclient.js
+cat src/x2godomcontroller.js src/x2gokdrivehtmlclient.js src/x2gohtmlclient.js > dist/x2goclient.js
+minify dist/x2goclient.js > dist/x2goclient.min.js
