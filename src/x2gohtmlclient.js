@@ -132,7 +132,7 @@ X2GoHTMLClient
 
                 }
                 d.updateStatus("resuming X2Go session with ID <b>" + resp.session.id + "</b>");
-                c.initSocket("ws://" + window.location.hostname + "/x2gows/" + resp.session.wsport,
+                c.initSocket("wss://" + window.location.hostname + "/x2gows/" + resp.session.wsport,
                     resp.session.cookie);
             });
         c.renderBackground();
