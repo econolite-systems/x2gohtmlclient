@@ -109,6 +109,7 @@ X2GoHTMLClient
             "action=start&user=" + d.getUname() + "&pass=" + d.getPass() + "&proxy=" + d.getProxy() +
                 "&server=" + d.getServer() + "&cmd=" +
                 d.getCommand() + "&geometry=" + c.getGeometry() +
+                "&session_type=K" +
                 "&proxyuser=" + d.getProxyUser() + "&proxypass=" + d.getProxyPass(), function (resp)
             {
 

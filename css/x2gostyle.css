@@ -10,12 +10,14 @@ body {
     line-height: 1.428571429;
     color: #4d4d4d;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 
 .btn.btn-success {
-    border-color: #185a7d;
-    background-color: #185a7d;
+    border-color: #009845;
+    background-color: #009845;
     color: #ffffff;
 }
 
